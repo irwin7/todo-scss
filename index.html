@@ -4,12 +4,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lesson</title>
+  <title>ToDo</title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/flexboxgrid.min.css">
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-
+  <main>
+    <div class="content-parent">
+      <div class="container">
+        <div class="content">
+          <div class="content-inner">
+            <form class="form" id="form">
+              <input class="add-text" type="text" id="get-text">
+              <button class="add-btn btn" id="add-btn" type="submit">Add</button>
+            </form>
+            <div class="area" id="area">
+              <!-- <div class="area-item">
+                <p class="area-text">item</p>
+                <i class='bx bx-x'></i>
+              </div> -->
+            </div>
+            <div class="content-btns">
+              <button id="all-btn" class="btn">All</button>
+              <button id="complete-btn" class="btn">Complete</button>
+              <button id="incomplete-btn" class="btn">Incomplete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
   <script src="js/main.js"></script>
 </body>
 </html>

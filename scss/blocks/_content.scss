@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.content-parent {
+  background-color: #89d5b3;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+}
+.content-inner{
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  background-color: #fff;
+  min-height: 50vh;
+  height: 100%;
+  width: 400px;
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(25,25,25,.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container {
+}
+.form{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.add-text{
+  width: 100%;
+  font-size: 14px;
+  margin: 0 .5em;
+  border-radius: 2em;
+  padding: 0.75em 1.5em;
+  background: none;
+  border: #e3e3e3 1px solid;
+  transition: border 250ms ease-out;
+  &:focus {
+    border: #4fc08d 1px solid;
+    outline: none;
+  }
+}
+.add-btn {
+}
+.area {
+  min-height: 100px;
+  height: 100%;
+  padding: 10px 0;
+}
+.content-btns {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  font-size: 14px;
+  margin: 0 .5em;
+  border-radius: 2em;
+  padding: 0.75em 1.5em;
+  cursor: pointer;
+  background: none;
+  color: darken(#4fc08d, 20%);
+  border: 1px solid;
+  letter-spacing: 1px;
+  color: #4fc08d;
+  border: #4fc08d 1px solid;
+  transition: 250ms ease-out;
+  &:hover, &:focus {
+    color: #fff;
+    background: #4fc08d;
+  }
+}
+.area-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 3px;
+}
+.area-text {
+  color: #4fc08d;
+  transition: all 0.4s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: #4fc08d;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2px;
+    transition: all 0.4s ease;
+  }
+  &:hover::after{
+    width: calc(100% + 5px);
+  }
+}
+.area-icon {
+}
+.bx {
+  display: flex;
+  align-items: center;
+  color: #4fc08d;
+  font-style: 20px;
+  border-radius: 50%;
+  border: 1px solid #4fc08d;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  background-color: #fff;
+
+  &:hover{
+    background-color: #4fc08d;
+    color: #fff;
+  }
+}
+.bx-x {
+}
