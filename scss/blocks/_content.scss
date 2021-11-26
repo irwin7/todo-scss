@@ -1,3 +1,36 @@
+::-webkit-scrollbar {
+  width: 4px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #4fc08d;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
 *{
   margin: 0;
   padding: 0;
@@ -21,7 +54,7 @@
 .content-inner{
   padding: 1.5rem 1rem 1.5rem 1rem;
   background-color: #fff;
-  min-height: 50vh;
+  min-height: 200px;
   height: 100%;
   width: 400px;
   border-radius: 1em;
@@ -30,8 +63,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.container {
 }
 .form{
   width: 100%;
@@ -53,11 +84,12 @@
     outline: none;
   }
 }
-.add-btn {
-}
 .area {
   min-height: 100px;
   height: 100%;
+  max-height: 166px;
+  overflow: auto;
+  overflow-x: hidden;
   padding: 10px 0;
 }
 .content-btns {
@@ -83,11 +115,16 @@
   }
 }
 .area-item {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   padding: 15px;
   border-radius: 3px;
+  animation-duration: 1s;
+  animation-delay: 0;
+}
+.d-flex{
+  display: flex;
 }
 .area-text {
   color: #4fc08d;
@@ -112,8 +149,6 @@
     width: calc(100% + 5px);
   }
 }
-.area-icon {
-}
 .bx {
   display: flex;
   align-items: center;
@@ -130,5 +165,7 @@
     color: #fff;
   }
 }
-.bx-x {
+.active{
+  background-color: #4fc08d;
+  color: #fff;  
 }
